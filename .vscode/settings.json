@@ -1,0 +1,8 @@
+{
+  "editor.codeActionsOnSave": {
+    // addMissingImports can backfire in case of multiple resolutions for the same import
+    "source.addMissingImports": "explicit",
+    "source.organizeImports": "always",
+    "source.fixAll.eslint": "always"
+  }
+}
