@@ -1,5 +1,6 @@
 import NextAuth from "next-auth";
 import LinkedIn from "next-auth/providers/linkedin";
+import Twitter from "next-auth/providers/twitter";
 
 export const {
   auth,
@@ -8,6 +9,5 @@ export const {
   signOut,
 } = NextAuth({
   secret: process.env.NEXTAUTH_SECRET,
-  // @ts-expect-error
-  providers: [LinkedIn],
+  providers: [Twitter, LinkedIn],
 });
